@@ -77,8 +77,8 @@ function greetingFunc()
 
 if (window.location.href.includes("index.html") || window.location.pathname === "/index.html") {
     greetingFunc();
-    l1.forEach((item, index) => findTheBanana(item, index, "first array"));
-    l2.forEach((item, index) => findTheBanana(item, index, "second array"));
+    //l1.forEach((item, index) => findTheBanana(item, index, "first array"));
+    //l2.forEach((item, index) => findTheBanana(item, index, "second array"));
 } else {
     console.log("Not on index.html, skipping greetingFunc.");
 }
@@ -88,7 +88,7 @@ function addYear()
 {
     let d = new Date();
     let y = d.getFullYear();
-    document.getElementById("copyYear").innerHTML = "Copyright (c) " + y + " by Riya Kadakia, All rights reserved";
+    document.getElementById("copyYear").innerHTML += y;
 
 }
 
@@ -100,3 +100,25 @@ function showList()
     y.style.display = "none";
 }
 
+$("#readMore").click(function(){
+    $("#longIntro").show();
+    $("#readLess").show();
+    $("#readMore").hide();
+})
+
+$("#readLess").click(function(){
+    $("#longIntro").hide();
+    $("#readLess").hide();
+    $("#readMore").show();
+})
+
+function validForm()
+{
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const comment = document.getElementById("comment");
+    if(!name.checkValidity() || !email.checkValidity() || !comment.checkValidity())
+    {
+        document.getElementById("invalidForm").innerHTML = "Please fill out the form correctly so I can get back to you :)";
+    }
+}

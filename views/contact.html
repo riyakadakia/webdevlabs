@@ -9,7 +9,7 @@
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Riya Kadakia's professional website">
     <script defer src="../static/script.js"></script>
-    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title>Riya Kadakia</title>
 </head>
 <body onload="addYear()">
@@ -29,11 +29,12 @@
             <form>
                 <label for="name">Your name (required)</label><br>
                 <input type="text" id="name" name="name" required><br>
-                <label for="email">Your email</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="comment">Your Comment</label><br>
-                <input type="text" id="comment" name="comment" style="width: 250px; height: 100px;"><br>
-                <input class="button" type="submit" value="SEND"><br><br>
+                <label for="email">Your email (required)</label><br>
+                <input type="text" id="email" name="email" required><br>
+                <label for="comment">Your Comment (required)</label><br>
+                <input type="text" id="comment" name="comment" required style="width: 250px; height: 100px;"><br>
+                <input class="button" type="submit"  onclick="validForm()" value="SEND"><br><br>
+                <p id="invalidForm"></p>
               </form>
               <table>
                 <tr>
@@ -56,8 +57,8 @@
             <br>
         </div>
         <footer>
-          <p id="copyYear">Copyright (c) by Riya Kadakia, All rights reserved</p>
-      </footer>
+          <p id="copyYear">Designed and Coded by Riya Kadakia, All rights reserved Copyright (c) </p>
+        </footer>
         
 </body>
 </html>

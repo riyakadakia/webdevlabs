@@ -9,7 +9,7 @@
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Riya Kadakia's professional website">
     <script defer src="./static/script.js"></script>
-    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title>Riya Kadakia</title>
 </head>
 <body onload="addYear()">
@@ -29,16 +29,20 @@
             <h2 id="greet">Hi, my name is Riya</h2>
             <img src="./static/myphoto.jpg" alt="Picture of Riya Kadakia" width="250" height="300">
             <p>Hello World!</p>
-            <p id="intro">My name is Riya Kadakia and I'm a freshman at Carnegie Mellon University. <br>
-                I am currently studying Information Systems and Robotics.<br>
-                I am from the Bay Area, California. 
-            </p><br>
-            <button id="readmore" class="button">Read More</button>
-            <p id="extra"> eowhifsi whoseiunjdvas</p>
-            <button id="readless" class="button">Read Less</button>
+            <span id="shortIntro">
+                <p>My name is Riya Kadakia. 
+                </p>
+            </span>
+            <span id="readMore" class="button">Read More</span>
+            <span id="longIntro">
+                <p> I'm a freshman at Carnegie Mellon University. <br>
+                    I am currently studying Information Systems and Robotics.<br>
+                    I am from the Bay Area, California.</p>
+            </span>
+            <span id="readLess" class="button">Read Less</span>
         </div>
         <footer>
-            <p id="copyYear">Copyright (c) by Riya Kadakia, All rights reserved</p>
+            <p id="copyYear">Designed and Coded by Riya Kadakia, All rights reserved Copyright (c) </p>
         </footer>
 </body>
 </html>
