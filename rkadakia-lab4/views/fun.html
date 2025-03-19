@@ -4,11 +4,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
     <meta name="author" content="Riya Kadakia">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Riya Kadakia's professional website">
-    <script defer src="./static/script.js"></script>
+    <script defer src="../static/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title>Riya Kadakia</title>
 </head>
@@ -18,31 +18,26 @@
             Riya Kadakia
         </h1>
         <nav class="navbar">
-            <a href="">About Me</a>
-            <a href="./views/fun.html">Life</a>
-            <a href="./views/contact.html">Contact</a>
-            <a href="./views/cv.html">Resume</a>
-
+            <a href="../index.html">About Me</a>
+            <a href="./fun.html">Life</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./cv.html">Resume</a>
         </nav>
     </header>
         <div class="main">
-            <h2 id="greet">Hi, my name is Riya</h2>
-            <img src="./static/myphoto.jpg" alt="Picture of Riya Kadakia" width="250" height="300">
-            <p>Hello World!</p>
-            <span id="shortIntro">
-                <p>My name is Riya Kadakia. 
-                </p>
-            </span>
-            <span id="readMore" class="button">Read More</span>
-            <span id="longIntro">
-                <p> I'm a freshman at Carnegie Mellon University. <br>
-                    I am currently studying Information Systems and Robotics.<br>
-                    I am from the Bay Area, California.</p>
-            </span>
-            <span id="readLess" class="button">Read Less</span>
+            <h2>Things I love to do for fun</h2>
+            <button class="button" id="button_list" onclick="showList()">Click to see...</button>
+            <ul id="list">
+                <li>Hanging out with friends</li>
+                <li>Crocheting</li>
+                <li>Painting</li>
+                <li>Playing sports</li>
+                <li>Watching TV</li>
+            </ul>
         </div>
         <footer>
             <p id="copyYear">Designed and Coded by Riya Kadakia, All rights reserved Copyright (c) </p>
         </footer>
+        
 </body>
 </html>

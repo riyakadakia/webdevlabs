@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <meta name="author" content="Riya Kadakia">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Riya Kadakia's professional website">
+    <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Riya Kadakia</title>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">
+            Riya Kadakia
+        </h1>
+        <nav class="navbar">
+          <a href="../index.html">About Me</a>
+          <a href="./fun.html">Life</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./cv.html">Resume</a>
+      </nav>
+  </header>
+        <div class="main">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Your name (required)</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Your email (required)</label><br>
+                <input type="text" id="email" name="email" required><br>
+                <label for="comment">Your Comment (required)</label><br>
+                <input type="text" id="comment" name="comment" required style="width: 250px; height: 100px;"><br>
+                <input class="button" type="submit"  onclick="validForm()" value="SEND"><br><br>
+                <p id="invalidForm"></p>
+              </form>
+              <table>
+                <tr>
+                    <th><b>Contact Method</b></th>
+                    <th><b>Description</b></th>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td>rkadakia@andrew.cmu.edu</td>
+                  </tr>
+                  <tr>
+                    <td>Phone</td>
+                    <td>650-733-5265</td>
+                  </tr>
+                  <tr>
+                    <td>LinkedIn</td>
+                    <td><a href="https://www.linkedin.com/in/riya-kadakia-77491b270/">Riya Kadakia</a></td>
+                  </tr>
+            </table>
+            <br>
+        </div>
+        <footer>
+          <p id="copyYear">Designed and Coded by Riya Kadakia, All rights reserved Copyright (c) </p>
+        </footer>
+        
+</body>
+</html>
