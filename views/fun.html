@@ -24,16 +24,31 @@
             <a href="./cv.html">Resume</a>
         </nav>
     </header>
-        <div class="main">
-            <h2>Things I love to do for fun</h2>
-            <button class="button" id="button_list" onclick="showList()">Click to see...</button>
-            <ul id="list">
-                <li>Hanging out with friends</li>
-                <li>Crocheting</li>
-                <li>Painting</li>
-                <li>Playing sports</li>
-                <li>Watching TV</li>
-            </ul>
+        <div class="mainLayout">
+            <div id="item1">
+                <h2>Things I love to do for fun</h2>
+                <!--<button class="button" id="button_list" onclick="showList()">Click to see...</button>-->
+                <ul id="list">
+                    <li>Hanging out with friends</li>
+                    <li>Crocheting</li>
+                    <li>Painting</li>
+                    <li>Playing sports</li>
+                    <li>Watching TV</li>
+                </ul>
+            </div>
+            <div id="item2">
+                <img class="funIMG" src="../static/friends.png" alt="Friends" width="380" height="300">
+            </div>
+            <div id="item3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AiMs67OJuL8?si=PnZFiUCA2SvFpsCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="item4">
+                <div class="container">
+                    <h2>Need Some Advice?</h2>
+                    <p id="adviceText">Click the button to get a random piece of advice!</p> <br>
+                    <button class="button" onclick="getAdvice()">Get Advice</button>
+                </div>
+            </div>
         </div>
         <footer>
             <p id="copyYear">Designed and Coded by Riya Kadakia, All rights reserved Copyright (c) </p>

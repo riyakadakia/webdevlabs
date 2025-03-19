@@ -92,6 +92,7 @@ function addYear()
 
 }
 
+/*
 function showList()
 {
     var x = document.getElementById("list");
@@ -99,6 +100,7 @@ function showList()
     var y = document.getElementById("button_list");
     y.style.display = "none";
 }
+*/
 
 $("#readMore").click(function(){
     $("#longIntro").show();
@@ -121,4 +123,20 @@ function validForm()
     {
         document.getElementById("invalidForm").innerHTML = "Please fill out the form correctly so I can get back to you :)";
     }
+}
+
+async function getAdvice()
+{
+    /*const response = fetch("https://api.adviceslip.com/advice");    
+    const advice = await response.json();
+*/
+    advice = fetch("https://api.adviceslip.com/advice")   
+        .then(advice => advice.json())
+        .then(data => {
+            console.log(data);
+            console.log(data.slip.advice)
+            document.getElementById("adviceText").innerText = data.slip.advice;
+        })
+        .catch(error => console.error("Error fetching advice"))
+    
 }
