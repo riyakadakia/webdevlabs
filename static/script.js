@@ -27,20 +27,6 @@ if(x5.length==x4)
 const l1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
 const l2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
-/*function findTheBanana(l)
-{
-    for(let i=0; i<l.length; i++)
-    {
-        if(l[i]=="Banana")
-        {
-            console.log("found the Banana in " + i);
-            alert("found the Banana in " + i);
-        }
-    }
-    findTheBanana(l1);
-    findTheBanana(l2);
-}*/
-
 function findTheBanana(item, index, arr)
 {
     if(item=="Banana")
@@ -140,3 +126,56 @@ async function getAdvice()
         .catch(error => console.error("Error fetching advice"))
     
 }
+
+
+
+// function toggleMenu() {
+//     document.querySelector(".nav-links").classList.toggle("show");
+// }
+
+// listItems = document.getElementsByTagName('li');
+// links = document.querySelectorAll('a');
+// console.log(links);
+
+// function dynNav() {
+//     let currentpath = window.location.pathname;
+
+//     links.forEach(element => {
+//         if(element.getAttribute("href") == currentpath){
+//             element.classList.add("active");
+//         }
+//         else {
+//             element.classList.remove("active");
+//         }
+//     });
+    
+// }
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("show");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    function dynNav() {
+        let currentPath = window.location.pathname; // Get the current page path
+        let links = document.querySelectorAll("nav a"); // Get all nav links
+        console.log("Current Path:", currentPath);
+        
+        links.forEach(link => {
+            console.log("link:", link.pathname);
+            if (link.pathname === currentPath) {
+                console.log('on page');
+                link.classList.add("active"); // Corrected classList usage
+            } else {
+                link.classList.remove("active"); // Ensure only one stays active
+            }
+        });
+    }
+
+    dynNav(); // Call the function to apply active class
+});
+
+console.log(window.location.pathname);
+
+
+

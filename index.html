@@ -4,45 +4,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="static/style.css">
     <meta name="author" content="Riya Kadakia">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Riya Kadakia's professional website">
     <script defer src="./static/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riya Kadakia</title>
 </head>
-<body onload="addYear()">
+
+
+
+<div onload="addYear()" class="grid-container">
     <header>
         <h1 id="webname">
             Riya Kadakia
         </h1>
-        <nav class="navbar">
-            <a href="">About Me</a>
-            <a href="./views/fun.html">Life</a>
-            <a href="./views/contact.html">Contact</a>
-            <a href="./views/cv.html">Resume</a>
-
-        </nav>
     </header>
-        <div class="main">
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="">About Me</a></li>
+            <li><a href="./views/fun.html">Life</a></li>
+            <li><a href="./views/contact.html">Contact</a></li>
+            <li><a href="./views/cv.html">Resume</a></li>
+            <li><a href="./views/template.html">Template</a></li>
+        </ul>
+        <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+    </nav>
+        <figure>
             <h2 id="greet">Hi, my name is Riya</h2>
             <img src="./static/myphoto.jpg" alt="Picture of Riya Kadakia" width="250" height="300">
+        </figure>
+        <main>
             <p>Hello World!</p>
+            
             <span id="shortIntro">
                 <p>My name is Riya Kadakia. 
                 </p>
             </span>
-            <span id="readMore" class="button">Read More</span>
+            <span id="readMore" class="button-new">Read More</span>
             <span id="longIntro">
                 <p> I'm a freshman at Carnegie Mellon University. <br>
-                    I am currently studying Information Systems and Robotics.<br>
-                    I am from the Bay Area, California.</p>
+                    I am currently studying Information Systems and Robotics.</p>
             </span>
-            <span id="readLess" class="button">Read Less</span>
-        </div>
+            <span id="readLess" class="button-new">Read Less</span>
+        </main>
+        <summary>
+            Hello this is the summary
+        </summary>
+
         <footer>
             <p id="copyYear">Designed and Coded by Riya Kadakia, All rights reserved Copyright (c) </p>
         </footer>
-</body>
+</div>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <meta name="author" content="Riya Kadakia">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Riya Kadakia's professional website">
+    <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Riya Kadakia</title>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">
+            Riya Kadakia
+        </h1>
+        <nav class="navbar">
+            <a href="../index.html">About Me</a>
+            <a href="./fun.html">Life</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./cv.html">Resume</a>
+        </nav>
+    </header>
+        <div class="mainLayout">
+            <div id="item1">
+                <h2>Things I love to do for fun</h2>
+                <!--<button class="button" id="button_list" onclick="showList()">Click to see...</button>-->
+                <ul id="list">
+                    <li>Hanging out with friends</li>
+                    <li>Crocheting</li>
+                    <li>Painting</li>
+                    <li>Playing sports</li>
+                    <li>Watching TV</li>
+                </ul>
+            </div>
+            <div id="item2">
+                <img class="funIMG" src="../static/friends.png" alt="Friends" width="380" height="300">
+            </div>
+            <div id="item3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AiMs67OJuL8?si=PnZFiUCA2SvFpsCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="item4">
+                <div class="container">
+                    <h2>Need Some Advice?</h2>
+                    <p id="adviceText">Click the button to get a random piece of advice!</p> <br>
+                    <button class="button" onclick="getAdvice()">Get Advice</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p id="copyYear">Designed and Coded by Riya Kadakia, All rights reserved Copyright (c) </p>
+        </footer>
+        
+</body>
+</html>

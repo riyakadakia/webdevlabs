@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../static/style.css">
     <meta name="author" content="Riya Kadakia">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
@@ -12,17 +13,22 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title>Riya Kadakia</title>
 </head>
-<body onload="addYear()">
+<div class="grid-container" onload="addYear()">
     <header>
-        <h1 id="webname">
+        <h1>
             Riya Kadakia
         </h1>
-        <nav class="navbar">
-            <a href="../index.html">About Me</a>
-            <a href="./fun.html">Life</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./cv.html">Resume</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">About Me</a></li>
+                <li><a href="./fun.html">Life</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="">Resume</a></li>
+                <li><a href="./template.html">Template</a></li>
+            </ul>
+            <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
         </nav>
+
     </header>
         <div class="main">
             <h2>Curriculum Vitae</h2>
@@ -54,5 +60,5 @@
         <footer>
             <p id="copyYear">Designed and Coded by Riya Kadakia, All rights reserved Copyright (c) </p>
         </footer>
-</body>
+    </div>
 </html>
